@@ -6,12 +6,12 @@ export default <RouterConfig>{
             return savedPosition;
         }
 
-        // if both from and to paths contain /galleries then scroll to top
-        if (from.path.includes('/galleries') && to.path.includes('/galleries')) {
+        // if both from and to paths contain /works then scroll to top
+        if (from.path.includes('/works') && to.path.includes('/works')) {
             return { top: 0 }
         }
-        
+
         return { top: 0 }
     },
-    
+
 };

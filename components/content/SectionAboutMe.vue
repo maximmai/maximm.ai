@@ -29,7 +29,7 @@ defineProps({
         <NuxtImg src="/img/home/sign.png" alt="signature" class="h-8 mr-auto" />
       </div>
 
-      <div v-parallax 
+      <div v-parallax
         data-rellax-xs-speed="0"
         data-rellax-mobile-speed="0"
         data-rellax-tablet-speed="0"
@@ -38,7 +38,7 @@ defineProps({
           <NuxtImg
             placeholder
             :src="photo?.src ? photo.src : 'img/placeholder.jpg'"
-            :alt="photo?.alt ? photo.alt : 'Oscar Mattern'"
+            :alt="photo?.alt ? photo.alt : 'Maxim Mai'"
             :width="photo?.width ? photo.width : 1"
             :height="photo?.height ? photo.height : 1"
             format="webp"

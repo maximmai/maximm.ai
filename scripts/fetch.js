@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 
-const dir = path.join(__dirname, "public/img/galleries/gal6");
+const dir = path.join(__dirname, "public/img/works/gal6");
 const files = fs.readdirSync(dir);
 
 const getImages = async (files) => {

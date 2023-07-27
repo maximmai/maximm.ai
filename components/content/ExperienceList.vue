@@ -1,5 +1,7 @@
 <script setup lang="ts">
-interface Award {
+import ExperienceItem from "~/components/content/ExperienceItem.vue";
+
+interface Experience{
   title?: string;
   year?: string;
   description?: string;
@@ -10,8 +12,8 @@ defineProps({
     type: String,
     required: false,
   },
-  awards: {
-    type: Array as PropType<Award[]>,
+  experience: {
+    type: Array as PropType<Experience[]>,
     required: false,
   },
 });
@@ -22,7 +24,7 @@ defineProps({
       {{ titleText }}
     </h3>
     <ul class="space-y-4">
-      <AwardsItem v-for="(item, index) in awards" :key="index" :title="item.title" :year="item.year" :description="item.description" />
+      <ExperienceItem v-for="(item, index) in experience" :key="index" :title="item.title" :year="item.year" :description="item.description" />
     </ul>
   </div>
 </template>

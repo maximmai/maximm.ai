@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const links = [
   { name: "Home", to: "/" },
-  { name: "Galleries", to: "/galleries" },
+  { name: "Works", to: "/works" },
   { name: "Stories", to: "/stories" },
   { name: "Hire me", to: "/hire-me" },
 ] as { name: string; to: string }[];
