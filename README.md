@@ -1,6 +1,3 @@
-![Maya Nuxt Template](./cover-dark.webp#gh-dark-mode-only)
-![Maya Nuxt Template](./cover-light.webp#gh-light-mode-only)
-
 # Maya Nuxt Template
 
 A personal photography portfolio template built with Nuxt.js and Tailwind CSS.
