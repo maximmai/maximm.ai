@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maxim Mai — AI Consulting & Software Engineering | maximm.ai</title>
+  <meta name="description" content="Senior software engineer providing AI consulting: strategy, LLM apps, retrieval, identity, and data platforms.">
+  <meta name="author" content="Maxim Mai">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Maxim Mai — AI Consulting & Software Engineering">
+  <meta property="og:description" content="I help teams ship AI products that actually work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maximm.ai/">
+  <meta name="twitter:card" content="summary">
+  <style>
+    :root{ --bg:#0b0c10; --panel:#101217; --text:#e6e7eb; --muted:#a3a8b3;
+      --brand:#7CFFCB; --brand2:#64B5F6; --ring:rgba(124,255,203,.35) }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{ margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text);
+      background: radial-gradient(1200px 600px at 85% -10%, rgba(124,255,203,.08), transparent 60%),
+                  radial-gradient(800px 500px at -10% 10%, rgba(100,181,246,.08), transparent 60%),
+                  var(--bg); line-height:1.6; }
+    a{color:var(--brand); text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{width:min(1120px,92%); margin:0 auto}
+    header{ position:sticky; top:0; z-index:50; background:linear-gradient(180deg, rgba(11,12,16,.85), rgba(11,12,16,.65) 60%, rgba(11,12,16,0));
+      backdrop-filter:saturate(160%) blur(6px); border-bottom:1px solid rgba(255,255,255,.06) }
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px}
+    .logo{display:inline-grid; place-items:center; width:28px; height:28px; border-radius:8px;
+      background:linear-gradient(135deg,var(--brand),var(--brand2)); color:#0b0c10;}
+    .nav a.btn{padding:10px 14px; border:1px solid rgba(255,255,255,.14); border-radius:10px}
+    .nav a.btn.primary{border:0; background:linear-gradient(135deg,var(--brand),var(--brand2)); color:#0b0c10; font-weight:700}
+    .hero{padding:96px 0 48px; display:grid; gap:22px}
+    .kicker{color:var(--brand); font-weight:800; letter-spacing:.18em; font-size:.9rem; text-transform:uppercase}
+    h1{font-size:clamp(2rem,3.4vw + 1rem,3.4rem); line-height:1.1; margin:0}
+    .sub{color:var(--muted); font-size:clamp(1.02rem, 1vw + .6rem, 1.2rem); max-width:62ch}
+    .cta{display:flex; gap:12px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:14px 18px; border-radius:12px; font-weight:700;
+      border:1px solid rgba(255,255,255,.12); color:var(--text); background:rgba(255,255,255,.03)}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand2)); color:#0b0c10; border:none; box-shadow:0 0 0 6px var(--ring)}
+    .section{padding:48px 0}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .card{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:18px; height:100%}
+    .card h3{margin:4px 0 6px; font-size:1.1rem} .card p{margin:0; color:var(--muted)}
+    .stack{display:flex; flex-wrap:wrap; gap:8px} .chip{padding:6px 10px; border:1px solid rgba(255,255,255,.14); border-radius:999px; font-size:.9rem; color:var(--muted)}
+    .check{display:inline-block; width:1.2em; height:1.2em; border-radius:50%; margin-right:8px; vertical-align:-3px;
+      background: radial-gradient(circle at 30% 30%, #0b0c10 0 35%, transparent 36%),
+                  linear-gradient(135deg, var(--brand), var(--brand2));}
+    .code{background:#0f172a; border:1px solid rgba(255,255,255,.1); border-radius:12px; padding:16px; overflow:auto}
+    .embed{background:rgba(255,255,255,.02); border:1px dashed rgba(255,255,255,.12); border-radius:14px; padding:10px}
+    footer{padding:40px 0 70px; color:var(--muted); border-top:1px solid rgba(255,255,255,.06)}
+    @media (max-width: 900px){ .grid-3{grid-template-columns:1fr} .hero{padding-top:76px} }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Maxim Mai","url":"https://maximm.ai",
+   "jobTitle":"Software Engineer & AI Consultant","sameAs":["https://maximm.ai"],
+   "worksFor":{"@type":"Organization","name":"maximm.ai"}}
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><span class="logo">M</span><span>maximm.ai</span></div>
+      <nav>
+        <a class="btn" href="#services">Services</a>
+        <a class="btn" href="#work">Work</a>
+        <a class="btn primary" href="https://cal.com/maximmai">Book a call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="home">
+      <div class="kicker">AI Consulting & Software Engineering</div>
+      <h1>Hi, I'm <span style="background:linear-gradient(135deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent;">Maxim Mai</span> — I help teams ship AI products that actually work.</h1>
+      <p class="sub">From strategy to production: I design data pipelines, retrieval systems, and LLM-powered apps; integrate identity & security; and deliver measurable impact. Available for fractional leadership and hands-on builds.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get a proposal →</a>
+        <a class="btn" href="https://cal.com/maximmai">Book a 15‑min intro</a>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <h2>What I do</h2>
+      <div class="grid-3" style="margin-top:14px">
+        <article class="card"><h3>AI Product Strategy</h3><p>Opportunity mapping, scoping, and KPIs. Choose the right models, build vs. buy, and ship iteratively with guardrails.</p></article>
+        <article class="card"><h3>LLM Systems & RAG</h3><p>Retrieval pipelines, embeddings, vector stores, evals, and tracing. Focus on latency, cost, and quality.</p></article>
+        <article class="card"><h3>Data & Backend</h3><p>Event‑driven services, ETL/ELT, and observability. PostgreSQL, Kafka/Kinesis, Redis, Python/Node/Go.</p></article>
+      </div>
+      <div class="grid-3" style="margin-top:14px">
+        <article class="card"><h3>Identity & Security</h3><p>AuthN/AuthZ, OAuth2/OIDC/SAML, token services, rate‑limiting, and privacy‑by‑design.</p></article>
+        <article class="card"><h3>Real‑estate & Fintech</h3><p>Listing search, ledgers, order books, risk controls, and payments integrations.</p></article>
+        <article class="card"><h3>Hands‑on Delivery</h3><p>Architect + implement, write tests, and optimize. I join your repo, your standups, and ship.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <h2>Selected work</h2>
+      <div class="grid-3" style="margin-top:14px">
+        <article class="card"><h3>Real‑estate AI search</h3><p>Multi‑tenant search with RAG over listings, images, and docs—improving match quality & lead‑to‑tour conversion.</p></article>
+        <article class="card"><h3>Risk & ledger platform</h3><p>Double‑entry ledger and risk checks for a trading app; accurate, idempotent order flows at scale.</p></article>
+        <article class="card"><h3>Identity & SSO rollout</h3><p>OAuth2/OIDC and org‑to‑org federation; reduced support load and improved security posture.</p></article>
+      </div>
+      <div class="stack" style="margin-top:14px">
+        <span class="chip">PostgreSQL</span><span class="chip">Kafka/Kinesis</span><span class="chip">Flink/Spark</span>
+        <span class="chip">Python</span><span class="chip">Node.js</span><span class="chip">Qdrant/PGVector</span>
+        <span class="chip">OpenAI/Ollama</span><span class="chip">Auth0/Okta</span><span class="chip">AWS/GCP</span>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <h2>How I work</h2>
+      <div><span class="check"></span><strong>Discovery →</strong> align on outcomes, constraints, and data.</div>
+      <div><span class="check"></span><strong>Pilot →</strong> ship a thin slice to prove value and measure.</div>
+      <div><span class="check"></span><strong>Scale →</strong> productionize: reliability, observability, security, and cost.</div>
+    </section>
+
+    <section class="section">
+      <h2>Example scope (RAG micro‑service)</h2>
+      <div class="code"><pre><code># components
+ingest → clean → chunk → embed → store (vector + SQL)
+query → retrieve → re‑rank → generate → evaluate → trace
+
+# highlights
+- deterministic fallbacks and guardrails
+- eval suite (accuracy, latency, cost) per release
+- traces & analytics wired to dashboards
+</code></pre></div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Let's build</h2>
+      <p class="sub">Tell me about your goals and timeline. I take on a limited number of clients to stay hands‑on.</p>
+      <div class="cta" style="margin-bottom:10px">
+        <a class="btn primary" href="mailto:max@maximm.ai?subject=Project%20inquiry%20from%20maximm.ai&body=Hi%20Maxim%2C%0A%0AWe%27re%20interested%20in%20AI%20consulting.%20Here%27s%20a%20quick%20summary%20of%20our%20project%3A%0A-%20Goals%3A%0A-%20Timeline%3A%0A-%20Team%3A%0A-%20Budget%20range%3A%0A%0AThanks!">Email me → me@maximm.ai</a>
+        <a class="btn" href="https://cal.com/maximmai">Book a 30‑min intro</a>
+      </div>
+      <div class="embed">
+        <cal-inline cal-link="maximmai" style="width:100%; height:720px; border:0; overflow:auto"></cal-inline>
+        <script type="module" src="https://cal.com/embed.js"></script>
+        <script nomodule src="https://cal.com/embed/embed.js"></script>
+        <noscript><p>Scheduling requires JavaScript. Or book at <a href="https://cal.com/maximmai">cal.com/maximmai</a>.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="y"></span> maximm.ai · Built shamelessly with AI · <a href="https://maximm.ai">maximm.ai</a></div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

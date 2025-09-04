@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maximmai-site-deployment
+  labels:
+    app: maximmai-static-site
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: maximmai-static-site
+  template:
+    metadata:
+      labels:
+        app: maximmai-static-site
+    spec:
+      imagePullSecrets:
+        - name: regcred   # reference to the secret
+      containers:
+        - name: maximmai-static-site
+          image: registry.fastdns.io/maximmai/maximm.ai  # replace with your image (e.g., your-dockerhub-user/my-static-site:1.0)
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: maximmai-static-site-service
+spec:
+  selector:
+    app: maximmai-static-site
+  ports:
+    - protocol: TCP
+      port: 80        # Service port
+      targetPort: 80  # Container port
+  type: NodePort  # Or NodePort if you’re not on a cloud provider
